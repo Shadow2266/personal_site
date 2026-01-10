@@ -29,30 +29,27 @@
         // ----------------------------------------------------
 
         const DATA = {
-            // 專利資料：確保編號與描述更符合實際情境，並移除錯誤的重複編號
             PATENTS: [
-                { id: 1, title: "醫療通訊系統與方法", code: "新型第M526731號", status: "本院使用中", type: "新型" },
+                { id: 1, title: "醫療通訊系統", code: "新型第M526731號", status: "本院使用中", type: "新型" },
                 { id: 2, title: "智慧型手術護理系統", code: "新型第M526730號", status: "本院使用中", type: "新型" },
                 { id: 3, title: "智慧型醫療照護資訊裝置", code: "新型第M539678號", status: "本院使用中", type: "新型" },
-                { id: 4, title: "智慧型醫療互動顯視系統", code: "新型第M541165號", status: "本院使用中", type: "新型" },
+                { id: 4, title: "智慧型醫療互動電視", code: "新型第M541165號", status: "本院使用中", type: "新型" },
                 { id: 5, title: "智慧型醫療資訊顯示器", code: "新型第M541056號", status: "本院使用中", type: "新型" },
-                { id: 6, title: "舒適型氧氣罩鼻結構", code: "新型第M560310號", status: "樣本試作", type: "新型" },
-                { id: 7, title: "協同式問卷方法及系統", code: "發明第I643158號", status: "產品應用", type: "發明" },
+                { id: 6, title: "舒適型氧氣罩結構", code: "新型第M560310號", status: "樣本試作", type: "新型" },
+                { id: 7, title: "協同式問卷方法", code: "發明第I643158號", status: "產品應用", type: "發明" },
                 { id: 8, title: "供氧呼吸器防壓固定結構", code: "發明第I682792號", status: "技轉、商品上市", type: "發明" },
                 { id: 9, title: "可變換角度之減壓輔具", code: "新型第M600611號", status: "樣本試作", type: "新型" },
                 { id: 10, title: "急性心肌梗塞之心電圖模擬器", code: "新型第M600920號", status: "本院使用中", type: "新型" },
                 { id: 11, title: "尿液偵測方法及裝置", code: "發明第I745064號 / US 11,380,189 B2", status: "商品上市 (美國專利已核准)", type: "發明/US" },
                 { id: 12, title: "病人監視警示系統", code: "發明第I765290號", status: "樣本試作", type: "發明" },
-                // 將重複的專利合併，並使用主要發明編號
                 { id: 13, title: "呼吸器的配戴減壓裝置", code: "發明第I807785號", status: "技轉、商品上市", type: "發明" },
                 { id: 14, title: "醫用引流管的固定減壓裝置", code: "發明第I817477號", status: "技轉、商品上市", type: "發明" },
                 { id: 15, title: "固定醫療器件的減壓裝置", code: "發明第I787114號", status: "技轉、即將上市", type: "發明" },
-                { id: 16, title: "智慧型磅秤系統及方法", code: "發明第I818673號 / US 12,422,300 B2", status: "商品上市 (美國專利申請中)", type: "發明/US" },
+                { id: 16, title: "智慧型磅秤系統", code: "發明第I818673號 / US 12,422,300 B2", status: "商品上市 (美國專利已核准)", type: "發明/US" },
                 { id: 17, title: "排泄物偵測裝置", code: "新型第M649859號", status: "樣本試作", type: "新型" },
                 { id: 18, title: "醫療儀器的遠距教學系統", code: "新型第M563079號", status: "本院使用中", type: "新型" },
                 { id: 19, title: "複合式即時監測系統", code: "新型第M654478號", status: "商品上市", type: "新型" },
             ],
-            // 修正職涯描述，使層級更清晰
             MILESTONES: [
                 { year: 2004, notes: ["護理部專員", "護理資訊", "醫院評鑑"] },
                 { year: 2006, notes: ["兼任講師", "護理資訊", "護理品質"] },
@@ -63,7 +60,6 @@
                 { year: 2020, notes: ["專任護理", "傷口照護中心", "人力資源管理", "護理研院際研習", "專案管理"] },
                 { year: 2023, notes: ["專任護理", "傷口照護中心", "人力資源管理"] },
             ],
-            // 修正獎項名稱和年份
             AWARDS: [
                 { year: 2021, title: "國際傑出發明家 學術國光獎章" },
                 { year: 2022, title: "第11屆南丁格爾獎 績優奉獻獎金獎" },
@@ -85,10 +81,8 @@
                     heading: "關於我",
                     roles: ["資訊護理師、護理科學家、發明家、教育家"],
                     degreesTitle: "學歷",
-                    // 修正學位描述
                     degrees: ["國立陽明大學 生物醫學資訊所 博士", "高雄醫學大學 公共衛生研究所 碩士", "長庚醫學暨工程學院 護理系 學士"],
                     currentTitle: "現職",
-                    // 修正現職描述
                     current: [
                         "奇美醫學中心護理部 督導 (資訊/品質/研發)",
                         "奇美醫學中心傷口照護中心 總幹事",
@@ -97,14 +91,14 @@
                     proRolesTitle: "專業社群與委員",
                     proRoles: ["台灣護理學會 專案審查委員", "台灣護理學會 實證健康照護知識館 審查委員", "台灣護理資訊學會 常務理事暨國際事務委員會主委", "中華民國護理師護士公會全聯會 人力政策小組委員", "台灣傷口造口及失禁護理學會 學術委員會委員", "臺灣生活型態醫學學會 學術委員會委員"],
                     skillsTitle: "專長",
-                    skills: ["Medical / Mobile / Connected Health", "創新科技應用", "實證護理 (Evidence-based Nursing)"],
+                    skills: ["Mobile Health / Connected Health", "創新科技應用", "實證護理 (Evidence-based Nursing)"],
                     dreamTitle: "我的夢想",
                     dream: "用科技打造兼具科學、藝術與人文的護理！",
                 },
                 patents: {
                     heading: "專利與創新", searchPlaceholder: "搜尋關鍵字或篩選狀態…",
                     filters: {
-                        all: "全部", inUse: "本院使用中", transfer: "技轉/商品上市", proto: "樣本試作", coming: "即將上市", applied: "產品應用", us: "美國專利",
+                        all: "全部", inUse: "本院使用中", transfer: "技轉/商品上市", proto: "樣本試作", applied: "產品應用", us: "美國專利",
                     }
                 },
                 milestones: { heading: "職涯里程碑" },
@@ -144,14 +138,14 @@
                     proRolesTitle: "Professional Service",
                     proRoles: ["Project Reviewer, Taiwan Nurses Association", "Reviewer, Evidence-based Healthcare Knowledge Hub (TWNA)", "Executive Director & Chair of International Affairs, Taiwan Nursing Informatics Association", "Member, Workforce Policy Taskforce, National Union of Nurses Association (ROC)", "Committee Member, WOCN Taiwan", "Committee Member, Taiwanese Society of Lifestyle Medicine"],
                     skillsTitle: "Expertise",
-                    skills: ["Medical / Mobile / Connected Health", "Innovation & Technology Translation", "Evidence-based Nursing"],
+                    skills: ["Mobile Health / Connected Health", "Innovation & Technology Translation", "Evidence-based Nursing"],
                     dreamTitle: "My Dream",
                     dream: "Advancing nursing with technology — where science meets art and humanity.",
                 },
                 patents: {
                     heading: "Patents & Innovation", searchPlaceholder: "Search keywords or filter by status…",
                     filters: {
-                        all: "All", inUse: "In Use", transfer: "Tech Transfer / Marketed", proto: "Prototype", coming: "Coming Soon", applied: "Applied", us: "US Patent",
+                        all: "All", inUse: "In Use", transfer: "Tech Transfer / Marketed", proto: "Prototype", applied: "Applied", us: "US Patent",
                     }
                 },
                 milestones: { heading: "Milestones" },
@@ -175,50 +169,33 @@
         // II. 狀態與控制 (State and Controller)
         // ----------------------------------------------------
 
-        let currentLang = 'zh'; // 預設語言
+        let currentLang = 'zh'; 
         let currentDict = DICT[currentLang];
         let currentPatentsQuery = '';
         let currentPatentsFilter = 'all';
-        let contactPreviewHtml = ''; // 用於儲存預覽 HTML，以便在語言切換時保留
+        let contactPreviewHtml = ''; 
 
-        /**
-         * 切換語言並重新渲染所有內容
-         */
         function toggleLanguage() {
             currentLang = currentLang === 'zh' ? 'en' : 'zh';
             currentDict = DICT[currentLang];
             renderAll();
         }
 
-        /**
-         * 渲染網頁的所有區塊
-         */
         function renderAll() {
             renderHeader();
             renderHero();
             renderAbout();
-            renderPatents(); // 專利需要單獨的渲染邏輯
+            renderPatents();
             renderMilestones();
             renderAwards();
             renderSpeaking();
-            renderContact(); // 渲染聯絡區塊時，會帶入 contactPreviewHtml
+            renderContact(); 
         }
 
-        /**
-         * 產生 Tag HTML
-         * @param {string} text - 標籤文字
-         */
         function tagHtml(text) {
-            // 調整 Tag 字體大小為 base
             return `<span class="inline-flex items-center rounded-full border px-3 py-1 text-base text-gray-700 border-gray-300 bg-white/60 backdrop-blur">${text}</span>`;
         }
 
-        /**
-         * 產生 Section 容器 HTML
-         * @param {string} id - 區塊 ID
-         * @param {string} title - 區塊標題
-         * @param {string} content - 區塊內容 HTML
-         */
         function sectionHtml(id, title, content) {
             return `
                 <section id="${id}" class="py-12 lg:py-16">
@@ -305,43 +282,60 @@
 
         function renderAbout() {
             const d = currentDict.about;
-            // 角色文字放大為 xl
             const rolesHtml = d.roles.map(r => `<p class="text-gray-800 text-xl">${r}</p>`).join('');
-            const skillsHtml = d.skills.map(tagHtml).join('');
-            // 列表文字放大為 base
+            
+            // 專長列表現在改為 <li> 形式呈現
+            const skillsHtml = d.skills.map(li => `<li class="list-disc list-inside text-base">${li}</li>`).join('');
+            
             const degreesHtml = d.degrees.map(li => `<li class="list-disc list-inside text-base">${li}</li>`).join('');
             const currentHtml = d.current.map(li => `<li class="list-disc list-inside text-base">${li}</li>`).join('');
             const proRolesHtml = d.proRoles.map(li => `<li class="list-disc list-inside text-base">${li}</li>`).join('');
 
             const content = `
-                <div class="grid md:grid-cols-2 gap-6">
+                <!-- 上方：角色 -->
+                <div class="mb-8">
                     <div class="space-y-4">
                         ${rolesHtml}
-                        <div class="flex flex-wrap gap-2 pt-2">
-                            ${skillsHtml}
-                        </div>
-                    </div>
-                    <div class="grid sm:grid-cols-2 gap-6">
-                        <div class="p-5 rounded-2xl border bg-white shadow-sm">
-                            <h3 class="font-semibold text-gray-900 mb-2 text-lg">${d.degreesTitle}</h3>
-                            <ul class="text-gray-700 space-y-1">
-                                ${degreesHtml}
-                            </ul>
-                        </div>
-                        <div class="p-5 rounded-2xl border bg-white shadow-sm">
-                            <h3 class="font-semibold text-gray-900 mb-2 text-lg">${d.currentTitle}</h3>
-                            <ul class="text-gray-700 space-y-1">
-                                ${currentHtml}
-                            </ul>
-                        </div>
-                        <div class="p-5 rounded-2xl border bg-white shadow-sm sm:col-span-2">
-                            <h3 class="font-semibold text-gray-900 mb-2 text-lg">${d.proRolesTitle}</h3>
-                            <ul class="text-gray-700 grid md:grid-cols-2 gap-y-1">
-                                ${proRolesHtml}
-                            </ul>
-                        </div>
                     </div>
                 </div>
+
+                <!-- 下方：逐一呈現的區塊 (滿版寬度) -->
+                <div class="space-y-6">
+                    <!-- 專長 (新版樣式：與其他區塊一致) -->
+                    <div class="p-5 rounded-2xl border bg-white shadow-sm w-full">
+                        <h3 class="font-semibold text-gray-900 mb-2 text-lg">${d.skillsTitle}</h3>
+                        <ul class="text-gray-700 space-y-1">
+                            ${skillsHtml}
+                        </ul>
+                    </div>
+
+                    <!-- 學歷 -->
+                    <div class="p-5 rounded-2xl border bg-white shadow-sm w-full">
+                        <h3 class="font-semibold text-gray-900 mb-2 text-lg">${d.degreesTitle}</h3>
+                        <ul class="text-gray-700 space-y-1">
+                            ${degreesHtml}
+                        </ul>
+                    </div>
+
+                    <!-- 現職 -->
+                    <div class="p-5 rounded-2xl border bg-white shadow-sm w-full">
+                        <h3 class="font-semibold text-gray-900 mb-2 text-lg">${d.currentTitle}</h3>
+                        <ul class="text-gray-700 space-y-1">
+                            ${currentHtml}
+                        </ul>
+                    </div>
+
+                    <!-- 專業社群與委員 -->
+                    <div class="p-5 rounded-2xl border bg-white shadow-sm w-full">
+                        <h3 class="font-semibold text-gray-900 mb-2 text-lg">${d.proRolesTitle}</h3>
+                        <!-- 內部維持兩欄顯示以節省空間，但外框是滿版 -->
+                        <ul class="text-gray-700 grid md:grid-cols-2 gap-y-1">
+                            ${proRolesHtml}
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 夢想區塊 -->
                 <div class="mt-6 p-5 rounded-2xl border bg-teal-50 text-teal-900">
                     <h3 class="font-semibold mb-1 text-lg">${d.dreamTitle}</h3>
                     <p class="text-base">${d.dream}</p>
@@ -359,15 +353,13 @@
                 const fullText = `${p.title} ${p.code} ${p.status} ${p.type}`.toLowerCase();
                 const okQuery = !q || fullText.includes(q);
                 
-                // 修正篩選邏輯，更精確匹配狀態和美國專利
                 const okFilter =
                     currentPatentsFilter === "all" ? true :
                     currentPatentsFilter === "inUse" ? p.status.includes("本院使用中") :
                     currentPatentsFilter === "transfer" ? (p.status.includes("技轉") || p.status.includes("商品上市")) :
                     currentPatentsFilter === "proto" ? p.status.includes("樣本試作") :
-                    currentPatentsFilter === "coming" ? p.status.includes("即將上市") :
                     currentPatentsFilter === "applied" ? p.status.includes("產品應用") :
-                    currentPatentsFilter === "us" ? p.code.toUpperCase().includes("US") : // 檢查 code 欄位是否包含 US
+                    currentPatentsFilter === "us" ? p.code.toUpperCase().includes("US") : 
                     true;
                 return okQuery && okFilter;
             });
@@ -382,7 +374,6 @@
             `).join('');
 
             const patentCardsHtml = filteredPatents.map(p => {
-                // 修正 Tag 分割邏輯：使用正規表達式分割，可以處理中文逗號、斜線、括號和空白，並移除空字串
                 const statusTags = p.status
                     .split(/[、\/()]|\s/)
                     .map(tag => tag.trim())
@@ -425,17 +416,11 @@
             document.getElementById('patents-container').innerHTML = sectionHtml('patents', d.heading, content);
         }
 
-        /**
-         * 專利搜尋輸入處理
-         */
         function setPatentsQuery(query) {
             currentPatentsQuery = query;
             renderPatents();
         }
 
-        /**
-         * 專利篩選按鈕處理
-         */
         function setPatentsFilter(filter) {
             currentPatentsFilter = filter;
             renderPatents();
@@ -445,27 +430,26 @@
             const d = currentDict.milestones;
             const milestonesHtml = DATA.MILESTONES.map((m, idx) => {
                 const notesHtml = m.notes.map(tagHtml).join('');
-                // 調整里程碑交錯顯示的樣式
-                const alignClass = idx % 2 === 0 ? 'sm:order-first' : 'sm:order-last';
-                // 修正了文本對齊方式，以確保在小螢幕上正常，大螢幕上交錯
-                const contentAlign = 'sm:ml-auto sm:text-left'; 
-                const tagsJustify = 'sm:justify-start';
-
-                // 修正了交錯邏輯，確保時間線在小螢幕上是單欄
-                const contentWrapperClass = idx % 2 === 0 ? 'sm:mr-8' : 'sm:ml-8'; // 左右邊距
-                const cardMarginClass = idx % 2 === 0 ? 'sm:text-left' : 'sm:text-right'; // 卡片內部文本對齊
 
                 return `
-                    <li class="relative">
-                        <div class="flex sm:items-center sm:justify-center gap-4">
-                            <div class="shrink-0 w-8 text-right sm:text-center font-bold text-teal-700 text-lg sm:w-20 ${alignClass}">
-                                ${m.year}
-                                <!-- 時間軸上的點 -->
-                                <div class="absolute hidden sm:block w-3 h-3 bg-teal-500 rounded-full left-1/2 -translate-x-1/2 top-1"></div>
-                                <div class="absolute sm:hidden w-3 h-3 bg-teal-500 rounded-full left-2 top-1"></div>
+                    <li class="relative group">
+                        <!-- 彈性容器，確保高度延展 -->
+                        <div class="flex flex-col sm:flex-row items-stretch gap-6">
+                            
+                            <!-- 左側：年份與節點 -->
+                            <div class="shrink-0 w-24 relative flex flex-col items-center justify-center sm:justify-start pt-2">
+                                <span class="font-bold text-teal-700 text-xl">${m.year}</span>
+                                <!-- 時間軸上的圓點 (裝飾) -->
+                                <div class="hidden sm:block absolute right-[-1.65rem] top-6 w-4 h-4 bg-teal-500 rounded-full border-4 border-white z-10"></div>
                             </div>
-                            <div class="relative bg-white border rounded-2xl shadow-sm p-4 w-full max-w-2xl ${contentWrapperClass} ${cardMarginClass}">
-                                <div class="text-gray-700 flex flex-wrap gap-2 ${tagsJustify}">
+
+                            <!-- 右側：內容卡片 (佔滿剩餘寬度) -->
+                            <div class="relative bg-white border rounded-2xl shadow-sm p-6 w-full flex-1">
+                                <!-- 箭頭 (裝飾) -->
+                                <div class="hidden sm:block absolute left-[-0.6rem] top-6 w-4 h-4 bg-white border-b border-l border-gray-200 rotate-45"></div>
+                                
+                                <!-- 內容標籤置中 -->
+                                <div class="flex flex-wrap justify-center gap-3">
                                     ${notesHtml}
                                 </div>
                             </div>
@@ -476,9 +460,9 @@
 
             const content = `
                 <div class="relative">
-                    <!-- 時間軸的線條 -->
-                    <div class="absolute left-4 sm:left-1/2 sm:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-gray-200"></div>
-                    <ul class="space-y-8">
+                    <!-- 垂直時間線 -->
+                    <div class="hidden sm:block absolute left-[6.5rem] top-4 bottom-4 w-0.5 bg-gray-200"></div>
+                    <ul class="space-y-6">
                         ${milestonesHtml}
                     </ul>
                 </div>
@@ -503,7 +487,6 @@
         function renderSpeaking() {
             const d = currentDict.speaking;
             const categoriesHtml = Object.entries(d.categories).map(([cat, items]) => {
-                // 列表文字放大為 base
                 const listItems = items.map(t => `<li class="list-disc list-inside text-base">${t}</li>`).join('');
                 return `
                     <div class="p-5 rounded-2xl border bg-white shadow-sm">
@@ -528,12 +511,7 @@
 
         function renderContact() {
             const d = currentDict.contact;
-            // 使用 contactPreviewHtml
             const previewHtml = contactPreviewHtml;
-            
-            // 由於 form 元素需要保持狀態，我們在 renderContact 中只渲染外層容器和標題/提示，
-            // 實際的 form 內容應該保持不變或使用更精細的更新。
-            // 為了簡化，我們將 form 保持為內聯 HTML，並依賴 onsubmit 處理。
             
             const content = `
                 <p class="text-base text-gray-500 mb-3">${d.note}</p>
@@ -574,9 +552,6 @@
             document.getElementById('contact-container').innerHTML = sectionHtml('contact', d.heading, content);
         }
 
-        /**
-         * 聯絡表單處理函數 (取代 React 的 handleGenerate)
-         */
         async function handleGenerate(e) {
             e.preventDefault();
             const form = e.currentTarget;
@@ -590,7 +565,6 @@
 
             const summary = `主題: ${subject}\n姓名: ${name}\n單位: ${org}\nEmail: ${email}\n\n需求:\n${message}`;
 
-            // 顯示摘要
             const previewHtmlContent = `
                 <div id="contact-preview-box" class="p-4 rounded-2xl border bg-gray-50">
                     <h4 class="font-semibold text-gray-900 mb-2 text-lg">${currentDict.contact.heading}</h4>
@@ -598,9 +572,8 @@
                 </div>
             `;
             document.getElementById('contact-preview-container').innerHTML = previewHtmlContent;
-            contactPreviewHtml = previewHtmlContent; // 儲存 HTML 以供語言切換時保留
+            contactPreviewHtml = previewHtmlContent; 
 
-            // 複製到剪貼簿
             let copySuccess = false;
             try {
                 if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -611,13 +584,11 @@
                 console.error("無法複製到剪貼簿:", err);
             }
 
-            // 顯示複製成功提示
             if (copySuccess) {
                 const originalText = currentDict.contact.submit;
                 submitBtn.textContent = currentDict.contact.copied;
                 submitBtn.classList.add('bg-green-600', 'hover:bg-green-700');
                 
-                // 平滑滾動到頁面底部，以便使用者看到摘要
                 setTimeout(() => {
                     const contactContainer = document.getElementById('contact-container');
                     if (contactContainer) {
@@ -635,15 +606,7 @@
             }
         }
 
-        // ----------------------------------------------------
-        // IV. 初始化 (Initialization)
-        // ----------------------------------------------------
-
-        /**
-         * 網頁載入完成後執行
-         */
         window.onload = function() {
-            // 在 body 內創建主要的容器 div
             const mainContent = document.createElement('div');
             mainContent.id = 'main-content-container';
             mainContent.className = 'min-h-screen bg-white text-gray-900';
@@ -676,7 +639,7 @@
 
             document.body.appendChild(mainContent);
             
-            renderAll(); // 首次渲染所有內容
+            renderAll(); 
         };
     </script>
 </body>
